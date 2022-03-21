@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abra um Ticket! | Suporte</title>
+</head>
+
+<body>
+    <header>
+        <div class="container-grid">
+            <a href="index.html"><img class="logo" src="img/logomenu.svg" alt="logo do website"></a>
+            <div class="barra-de-pesquisa">
+                <input type="text" class="barra-de-texto" placeholder="Busque Aqui">
+                <a href="#" class="botao-pesquisa">
+                    <img src="img/magnifying-glass-solid.svg" alt="lupa" height="20">
+                </a>
+            </div>
+            <nav class="menu">
+                <a class=smartphones-icon href="#">Smartphones</a>
+                <a class=notebooks-icon href="#">Notebooks</a>
+                <a class=computadores-icon href="#">Computadores</a>
+            </nav>
+            <div class="carrinho-usuario">
+                <a class="icones-header" href="#"><img src="img/cart-shopping-solid.svg" alt="carrinho de compras"
+                        height="20"></a>
+                <a class="icones-header" href="login.html"><img src="img/user-solid.svg" alt="boneco de login" height="20"></a>
+            </div>
+        </div>
+    </header>
+    <form>
+        <p class="title-form"><img src="img/headset-solid.svg" alt="atendimento" width="24px">Atendimento Senai
+            Protótipo</p>
+        <p class="subtitle-form">Preencha os dados e clique em "enviar ticket", o atendimento será feito atráves do
+            e-mail informado.</p>
+        <label for="name"></label>
+        <input type="text" id="name" placeholder="Nome Completo">
+        <label for="assunto"></label>
+        <select id="assunto">
+            <option value="Assunto">
+                Assunto
+            </option>
+            <option value="Rastrear Entrega">
+                Rastrear Entrega
+            </option>
+            <option value="Acompanhar Pedido">
+                Acompanhar Pedido
+            </option>
+            <option value="Cancelar Pedido">
+                Cancelar Pedido
+            </option>
+            <option value="Duvidas de Produto">
+                Duvida de Produtos
+            </option>
+            <option value="Arrependimento">
+                Arrependimento
+            </option>
+            <option value="Garantia">
+                Garantia
+            </option>
+            <option value="Outros">
+                Outros
+            </option>
+        </select>
+        <label for="email"></label>
+        <input type="text" id="email" placeholder="Endereço de E-mail">
+        <div>
+            <label for="ddd"></label>
+            <input type="text" id="ddd" size="8" maxlength="2" style="max-width: 85px;" placeholder="DDD">
+            <label for="Telefone"></label>
+            <input type="text" id="Telefone" placeholder="Telefone">
+        </div>
+        <label for="mensagem"></label>
+
+        <textarea id="mensagem" name="mensagem" rows="10" cols="50" maxlength="200" minlength="2"
+            placeholder="Digite  aqui  sua  mensagem" required autocomplete></textarea>
+        <div id="btn-submit">
+            <input id="btn-submit-form" type="button" value="Enviar Ticket">
+        </div>
+    </form>
+    <section class="container-rodape">
+        <div class="primeira-linha-rodape">
+            <img src="img/logomenu.svg" alt="logo senai" width="446.02" height="63">
+            <a class="link-rodape" href="#">Sobre nós</a>
+            <a class="link-rodape" href="faleconosco.html">Suporte</a>
+            <a class="link-rodape" href="#">Conta</a>
+            <a class="link-rodape" href="#">Termos de Serviço</a>
+        </div>
+        <div class="segunda-linha-rodape">
+            <div class="formas-de-pagamento">
+                formas de pagamento:
+                <div class="imagem-pagamentos">
+                    <img src="img/formas-pagamento 1.svg"
+                        alt="formas de pagamento: visa, mastercard, elo, hypercard e boleto" width="412.32">
+                </div>
+            </div>
+            <div class="segurança-certificados">
+                Segurança:
+                <div class="selos">
+                    <img class="selo-de-segurança" src="img/selo-google-site-seguro 1.svg" alt="site seguro do google"
+                        width="145.37" height="38.92">
+                    <img class="selo-de-segurança" src="img/site blindado.svg" alt="site blindado" width="145.37px"
+                        height="30.61px">
+                </div>
+            </div>
+            <div class="certificados-iso">
+                Certificados:
+                <div class="selos-iso">
+                    <img src="img/ISO 4001 1.svg" alt="iso 14001" width="95.15px">
+                    <img src="img/ISO 9001 1.svg" alt="iso 9001" width="76.32">
+                </div>
+            </div>
+        </div>
+        <div class="siga-nos">
+            Siga-nos:
+            <div class="siga-nos-icones">
+                <a class="icones-sociais" href="#"><img src="img/instagram-brands.svg" alt="página do instagram"
+                        width="30px"></a>
+                <a class="icones-sociais" href="#"><img src="img/twitter-brands.svg" alt="página do twitter"
+                        width="30px"></a>
+                <a class="icones-sociais" href="#"><img src="img/facebook-brands.svg" alt="página do facebook"
+                        width="30px"></a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container-direitos-reservados">
+            <span class="direitos-reservados-info">© 2022 SESI SENAI PROTÓTIPO Todos os direitos reservados.
+                SESI SENAI LTDA. CNPJ: 00.000.000/0000-00</span>
+        </div>
+    </footer>
+</body>
+
+</html>

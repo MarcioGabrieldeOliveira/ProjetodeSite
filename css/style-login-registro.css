@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5% 
+    /* 1rem é igual a 10 pixels */
+}
+
+.fundo-login {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(72deg, #E15554 1%, #4D9DE0 40%, #5FAD56 80%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    height: 55rem;
+    min-height: 44rem;
+    max-height: 60rem;
+    width: 50rem;
+    /* max-width: 60rem;
+    min-width: 44rem; */
+}
+.content .header-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+.content .header-login img {
+    width: 5rem;
+    height: 5rem;
+}
+.content .header-login h1 {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: bold;
+    color: white;
+    font-size: 4rem;
+    margin-top: 1rem;
+}
+.content main {
+    margin: auto;
+    width: 85%;
+    height: 70%;
+}
+.content main form {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+.content .input-field {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    height: 5.5rem;
+    border: 2px solid #ffffff;
+    flex-direction: row-reverse;
+    transition: .3s;
+}
+.content .input-field:hover {
+    border: 2px solid #D3D3D3;
+    transition: .3s;
+}
+.content .input-field:hover > input {
+    background-color: #D3D3D3;
+    transition: .3s;
+}
+.content .input-field input {
+    border: none;
+    outline: none;
+    width: 82%;
+    height: 100%;
+    padding-left: 20px;
+    font-size: 20px;
+    font-family: 'PT Sans', sans-serif;
+    border-radius: 0 8px 8px 0;
+    transition: .3s;
+}
+.content::-webkit-input-placeholder {
+    color: #6d6e6f;
+    font-weight: 300;
+}
+.content .input-field label {
+    height: 5.5rem;
+    width: 18%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content .input-field label img {
+    width: 2.4rem;
+    height: 2.4rem;
+}
+.content .checkbox label {
+    color: white;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 18px;
+    cursor: pointer;
+}
+.content .checkbox input {
+    display: none;
+}
+.content .checkbox input + label:before {
+    content: '';
+    display: inline-block;
+    width: 2.4rem;
+    height: 2.4rem;
+    vertical-align: middle;
+    border: 2px solid white;
+    border-radius: 0.5rem;
+    margin-right: 1rem;
+}
+.content .checkbox input:checked + label:before {
+    background: url(../img/check-solid.svg) no-repeat center;
+}
+.content form button {
+    height: 5.5rem;
+    background-color: #031D44;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    font-size: 3rem;
+    font-family: 'PT Sans', sans-serif;
+    transition: .3s;
+}
+.content form button:hover {
+    background-color: #021127;
+    transition: .3s;
+}
+.content footer {
+    margin: auto;
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20%;
+    border-bottom: 2px solid #def7f478;
+}
+.content footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    transition: .3s;
+}
+.content footer a:hover {
+    text-decoration: underline;
+    transition: .3s;
+}
+.content footer span a {
+    font-weight: 300;
+}
+
+@media (max-width: 400px) {
+    html {
+        font-size: 58%;
+    }
+}
+@media (max-width: 370px) {
+    html {
+        font-size: 52%;
+    }
+    .content header h1 {
+        font-size: 3.5rem;
+    }
+    .content main {
+        width: 100%;
+    }
+    .content {
+        width: 85%;
+    }
+    .content footer {
+        width: 100%;
+    }
+    .content footer a {
+        font-size: 1.4rem;
+    }
+}
+
+
+
+
+.fundo-registro {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(72deg, #E15554 1%, #4D9DE0 40%, #5FAD56 80%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content-registro {
+    display: flex;
+    flex-direction: column;
+    height: 80rem;
+    min-height: 44rem;
+    max-height: 85rem;
+    width: 50rem;
+    /* max-width: 60rem;
+    min-width: 44rem; */
+}
+.content-registro .header-registro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.content-registro .header-registro img {
+    width: 5rem;
+    height: 5rem;
+}
+.content-registro .header-registro h1 {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: bold;
+    color: white;
+    font-size: 4rem;
+    margin-top: 1rem;
+}
+.content-registro .main-registro {
+    margin: auto;
+    width: 85%;
+    height: 82%;
+}
+.content-registro .main-registro .form-registro {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+.content-registro .input-field {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    height: 5.5rem;
+    border: 2px solid #ffffff;
+    flex-direction: row-reverse;
+    transition: .3s;
+}
+.content-registro .input-field:hover {
+    border: 2px solid #D3D3D3;
+    transition: .3s;
+}
+.content-registro .input-field:hover > input {
+    background-color: #D3D3D3;
+    transition: .3s;
+}
+.content-registro .input-field input {
+    border: none;
+    outline: none;
+    width: 82%;
+    height: 100%;
+    padding-left: 20px;
+    font-size: 20px;
+    font-family: 'PT Sans', sans-serif;
+    border-radius: 0 8px 8px 0;
+    transition: .3s;
+}
+.content-registro::-webkit-input-placeholder {
+    color: #6d6e6f;
+    font-weight: 300;
+}
+.content-registro .input-field label {
+    height: 5.5rem;
+    width: 18%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content-registro .input-field label img {
+    width: 2.4rem;
+    height: 2.4rem;
+}
+.content-registro .checkbox-registro label {
+    color: white;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+.content-registro .checkbox-registro input {
+    display: none;
+}
+.content-registro .checkbox-registro input + label:before {
+    content: '';
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    vertical-align: middle;
+    border: 2px solid white;
+    border-radius: 0.5rem;
+    margin-right: 1rem;
+}
+.content-registro .checkbox-registro input:checked + label:before {
+    background: url(../img/check-solid.svg) no-repeat center;
+}
+.content-registro .form-registro button {
+    height: 5.5rem;
+    background-color: #031D44;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    font-size: 3rem;
+    font-family: 'PT Sans', sans-serif;
+    transition: .3s;
+}
+.content-registro .form-registro button:hover {
+    background-color: #021127;
+    transition: .3s;
+}
+.content-registro .footer-registro {
+    margin: auto;
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 6%;
+    border-bottom: 2px solid #def7f478;
+}
+.content-registro .footer-registro a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    transition: .3s;
+}
+.content-registro .footer-registro a:hover {
+    text-decoration: underline;
+    transition: .3s;
+}
+.content-registro .footer-registro span a {
+    font-weight: 300;
+}
+
+@media (max-width: 400px) {
+    html {
+        font-size: 58%;
+    }
+}
+@media (max-width: 370px) {
+    html {
+        font-size: 52%;
+    }
+    .content header h1 {
+        font-size: 3.5rem;
+    }
+    .content main {
+        width: 100%;
+    }
+    .content {
+        width: 85%;
+    }
+    .content footer {
+        width: 100%;
+    }
+    .content footer a {
+        font-size: 1.4rem;
+    }
+}
