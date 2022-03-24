@@ -2,41 +2,46 @@
 <html lang="pt-br">
 <head>
     <link rel="stylesheet" href="css/style-login-registro.css">
+    <link rel="stylesheet" href="css/style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
 </head>
 <body>
-    <!-- <header>
+    <header>
         <div class="container-grid">
-            <a href="index.html"><img class="logo" src="img/logomenu.svg" alt="logo do website"></a>
+            <a href="#" class="menu-bar" onclick="mostrarmenu()"><img src="img/bars-solid.svg" alt="hamburguer bar"></a>
+            <a class="logo" href="index.html"><img src="img/logomenu.svg" alt="logo do website"></a>
+            <a class="logo-tablet" href="index.html"><img src="img/Logo (3).svg" alt="logo"></a>
+            <a class="logo-mobile" href="index.html"><img src="img/Logo (4).svg" alt="logo" width="170px"></a>
             <div class="barra-de-pesquisa">
                 <input type="text" class="barra-de-texto" placeholder="Busque Aqui">
                 <a href="#" class="botao-pesquisa">
-                    <img src="img/magnifying-glass-solid.svg" alt="lupa" height="20">
+                    <img src="img/magnifying-glass-solid.svg" alt="lupa">
                 </a>
             </div>
-            <nav class="menu">
-                <a class=smartphones-icon href="#">Smartphones</a>
-                <a class=notebooks-icon href="#">Notebooks</a>
-                <a class=computadores-icon href="#">Computadores</a>
+            <nav id="menu" class="menu">
+                <a href="#">Smartphones</a>
+                <a href="#">Notebooks</a>
+                <a href="#">Computadores</a>
+                <a href="carrinho.html">Carrinho</a>
+                <input type="text" placeholder="Pesquise...">
             </nav>
             <div class="carrinho-usuario">
-                <a class="icones-header" href="#"><img src="img/cart-shopping-solid.svg" alt="carrinho de compras"
-                        height="20"></a>
-                <a class="icones-header" href="login.html"><img src="img/user-solid.svg" alt="boneco de login" height="20"></a>
+                <!-- <a id="carrinho-button" href="#"><img src="img/cart-shopping-solid.svg" alt="carrinho de compras"></a> -->
+                <a href="login.html"><img src="img/user-solid.svg" alt="boneco de login"></a>
             </div>
         </div>
-    </header> -->
+    </header>
     <section class="fundo-login">
-    <div class="content">
+    <div class="content-login">
         <div class="header-login">
             <img src="img/right-to-bracket-solid.svg" alt="pagina login">
             <h1>Acesse sua conta</h1>
         </div>
-        <main>
-            <form>
+        <div class="main-login">
+            <div class="form-login">
                 <div class="input-field">
                     <input id="email" type="email" placeholder="E-mail">
                     <label for="email">
@@ -49,20 +54,21 @@
                         <img src="img/key-solid.svg" alt="senha">
                     </label>
                 </div>
-                <div class="checkbox">
+                <div class="checkbox-login">
                     <input type="checkbox" checked id="remind-pass">
                     <label for="remind-pass">Lembrar senha</label>
                 </div>
                 <button>
                     Login
                 </button>
-            </form>
-        </main>
-        <footer>
+            </div>
+        </div>
+        <div class="footer-login">
             <span><a href="faleconosco.html">Esqueci minha senha</a></span>
             <a href="registro.html">Criar nova conta</a>
-        </footer>
+        </div>
     </div>
 </section>
+
 </body>
 </html>
